@@ -5,10 +5,24 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all'%>
+    <%= javascript_pack_tag 'application' %>
   </head>
-
+  <% unless current_page?(new_user_session_path) %>
+    <header>
+      <div class="top-menu">
+        <div class="menu_icon">
+          <%= link_to image_tag("menu_icon.png", class:"menu-icon") %>
+        </div>
+        <div>
+          <%= link_to image_tag("rogo_color.png", class:"rogo") , root_path %>
+        </div>
+        <div class="rogin-menu">
+          <%= link_to "ログイン" , new_user_session_path ,class:"rogin" %>
+        </div>
+      </div>
+    </header>
+  <% end %>
   <body>
     <%= yield %>
   </body>

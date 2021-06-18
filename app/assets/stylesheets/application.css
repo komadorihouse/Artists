@@ -1,15 +1,42 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+@import "corrections/index.css";
+
+a {
+  text-decoration:none 
+}
+
+.top-menu {
+  background-color: #040419;
+  display: flex;
+  width: 100vw;
+  height: 110px;
+  margin: 0px;
+}
+
+.menu-icon {
+  width: 35px;
+  margin: 35px;
+}
+
+.rogo {
+  height: 50px;
+  margin-top: 32px;
+}
+
+.rogin-menu {
+  font-size: 16px;
+  margin-top: 40px;
+  margin-left: calc(100vw - 128.27px - 105px - 130px);
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.rogin {
+  color: #dedede;
+  text-decoration: none;
+}
+
+/* 下記はbody全体の設定 */
+.wall {
+  background-color: #040419;
+  height: calc(100vh - 110px - 200px);
+}
