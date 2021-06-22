@@ -1,0 +1,97 @@
+#rogin-wall {
+  background-color: #040419;
+  display: flex;
+  justify-content: center;
+}
+
+
+.rogin-rogo {
+  width: 300px;
+  margin-top: 200px;
+  margin-left: 100px;
+}
+
+.slogan {
+  color: #d3d3d3;
+}
+
+.rogin-gaku {
+  width: 430px;
+  margin: 60px;
+}
+
+.rogin-list {
+  position: absolute;
+  z-index: 20;
+  right: 30px;
+  bottom: 30px;
+}
+.flame {
+  width: 700px;
+  height: 620px;
+  position: relative;
+  padding-left: 100px;
+  /* background: -webkit-radial-gradient(orange 50%,transparent 50%);
+  background: -moz-radial-gradient(orange 50%,transparent 50%); */
+  background: radial-gradient(farthest-side circle at 50%,#4c505b 200px,#040419);
+}
+
+/* .spotlite{
+  width: 500px;
+  height: 500px;
+  background: -webkit-radial-gradient(#fff,orange);
+   background: -moz-radial-gradient(#fff,orange);
+   background: radial-gradient(#fff,orange);
+} */
+
+.rogin-form {
+  color: rgb(16, 16, 15);
+  position: absolute;
+  top: 158px;
+  left: 253px;
+  width: 100px;
+  height: 100px;
+}
+
+.field {
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+
+#email {
+  height: 35px;
+  width: 203px;
+  padding-left: 13px;
+  border-radius: 8px;
+  border:solid rgb(143, 143, 143) 1px;
+}
+
+#rogin-pass {
+  height: 35px;
+  width: 203px;
+  padding-left: 13px;
+  border-radius: 8px;
+  border:solid rgb(143, 143, 143) 1px;
+}
+
+#rogin-sub {
+  height: 35px;
+  width: 220px;
+  padding-left: 13px;
+  font-size: 13px;
+  border: none;
+  background-color: #4809c6;
+  color: blanchedalmond;
+  border-radius: 8px;
+}
+
+.forgot-text{
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 61px;
+}
+
+#forgot {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 12px;
+}

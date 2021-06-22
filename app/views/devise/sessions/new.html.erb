@@ -1,26 +1,39 @@
-<h2>Log in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<div id="rogin-wall">
+  <div class="title">
+    <%= link_to image_tag("rogo_color.png", class:"rogin-rogo") %>
+    <div class="slogan">もっとアートを身近に。</div>
+    <div class="slogan">あなたとアートをもっと近づける</div>
+    <div class="slogan">RTに特化したSNS。</div>
   </div>
+  <div class="flame">
+    <div class="spotlite"></div>
+      <%= link_to image_tag("art_gaku.png", class:"rogin-gaku") %>
+    <div class="rogin-form">
+      <div class="rogin_list">
+        <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+          <div class="field">
+            <%= f.email_field :email, autofocus: true, autocomplete: "email" ,placeholder:"メールアドレス" ,id:"email"%>
+          </div>
 
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
+          <div class="field">
+            <%= f.password_field :password, autocomplete: "current-password" ,placeholder:"パスワード",id:"rogin-pass"%>
+          </div>
 
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+          <% if devise_mapping.rememberable? %>
+            
+          <% end %>
+
+          <div class="actions">
+            <%= f.submit "ログイン" ,id:"rogin-sub"%>
+          </div>
+          <div class="forgot-text">
+            <%= link_to 'パスワードを忘れた', "#" ,id:"forgot"%>
+          </div>
+        <% end %>
+      </div>
     </div>
-  <% end %>
-
-  <div class="actions">
-    <%= f.submit "Log in" %>
   </div>
-<% end %>
+</canvas>
+</div>
 
-<%= render "devise/shared/links" %>
