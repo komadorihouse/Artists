@@ -1,3 +1,7 @@
+.slogan{
+  margin-left: 100px;
+}
+
 #rogin-wall {
   background-color: #040419;
   display: flex;
@@ -94,4 +98,22 @@
 #forgot {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 12px;
+}
+
+.registration-btn {
+    height: 35px;
+    width: 150px;
+    font-size: 13px;
+    border: none;
+    background-color: #9d9d9d;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 38px;
+    padding-top: 7px;
+    box-sizing: border-box;
+}
+
+#registration-font{
+  color: rgb(255, 255, 255);
 }

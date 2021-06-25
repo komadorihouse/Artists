@@ -1,10 +1,10 @@
 
 <div id="rogin-wall">
   <div class="title">
-    <%= link_to image_tag("rogo_color.png", class:"rogin-rogo") %>
+    <%= link_to image_tag("rogo_color.png", class:"rogin-rogo", url: root_path) %>
     <div class="slogan">もっとアートを身近に。</div>
     <div class="slogan">あなたとアートをもっと近づける</div>
-    <div class="slogan">RTに特化したSNS。</div>
+    <div class="slogan">ARTに特化したSNS。</div>
   </div>
   <div class="flame">
     <div class="spotlite"></div>
@@ -29,6 +29,9 @@
           </div>
           <div class="forgot-text">
             <%= link_to 'パスワードを忘れた', "#" ,id:"forgot"%>
+          </div>
+          <div class="registration-btn">
+            <%= link_to '新規登録', "#" ,id:"registration-font" %>
           </div>
         <% end %>
       </div>

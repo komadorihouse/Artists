@@ -11,26 +11,69 @@ a {
   background-color: #ebeded;
   display: flex;
   width: 100vw;
-  height: 69px;
+  height: 80px;
   margin: 0px;
-  padding: 31px 31px 0px 31px;
+  padding: 22px 31px 0px 31px;
 }
 
-.menu-icon {
+.m-icon{
+  margin-top: 10px;
+}
+
+.show-lists{
+  width: 380px - 62px;
+  position: absolute;
+  left: 0px;
+  top: 100px;
+  background-color: #f4f4f4;
+  font-size: 22px;
+  padding: 31px;
+  color: #606060;
+}
+
+.hidden {
+  display: none;
+  cursor:pointer;
+}
+
+.manu-image {
+  width: 31px;
+  height: 31px;
+  margin-right: 31px;
+  text-align: center;
+}
+
+.border {
+  border-bottom: 1px solid #7a7a7a;
+  margin: 15px 0px 15px 0px;
+}
+
+.pull-down-list{
+  padding: 17px 35px 17px 15px;
+  display: flex;
+  color: #606060;
 }
 
 .rogo {
-  height: 50px;
+  width: 174px;
   margin-left: 35px;
+  margin-top: 2px;
 }
 
 .rogin-menu {
-  font-size: 16px;
+  font-size: 24px;
   margin-top: 6px;
-  margin-left: calc(100vw - 128.27px - 105px - 130px);
+  margin-left: calc(100vw - 174px - 105px - 130px - 28px - 15px);
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 400; 
+  display: flex;
+
 }
+
+.rogin_image {
+  margin-right: 11px;
+}
+
 .rogin {
   color: #606060;
   text-decoration: none;
