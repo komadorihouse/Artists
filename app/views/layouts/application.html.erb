@@ -22,21 +22,21 @@
           <%= link_to "ログイン" , new_user_session_path ,class:"rogin" %>
         </div>
       </div>
-
-      <ul class="show-lists hidden" id="pull-down">
-        <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("collecter.png") %></div>コレクターモード</li>
-        <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("myroom.png"), url:root_path  %></div><%= link_to "マイコレクションルーム" ,root_path %></li>
-        <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("collection.png") %></div>マイコレクション</li>
-        <li class="border"></div>
-        <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("collecter.png") %></div>コレクター</li>
-        <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("artist_mark.png") %></div>アーティスト</li>
-        <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("sakaguti.png") %></div>坂口 恭平</li>
-        <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("banksy.png") %></div>BANKSY</li>
-        <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("t-t.png") %></div>Charles Chaplin</li>
-        <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("a-w-w.png") %></div>艾未未</li>
-        <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("other.png") %></div>その他表示</li>
-      </ul>
-      </div>
+        <nav>
+          <ul class="show-lists" id="pull-down">
+            <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("collecter.png") %></div>コレクターモード</li>
+            <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("myroom.png"), url: corrections_path  %></div><%= link_to "マイコレクションルーム" ,corrections_path %></li>
+            <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("collection.png") %></div>マイコレクション</li>
+            <li class="border"></div>
+            <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("collecter.png") %></div>コレクター</li>
+            <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("artist_mark.png") %></div>アーティスト</li>
+            <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("sakaguti.png") %></div>坂口 恭平</li>
+            <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("banksy.png") %></div>BANKSY</li>
+            <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("t-t.png") %></div>Charles Chaplin</li>
+            <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("a-w-w.png") %></div>艾未未</li>
+            <li class="pull-down-list"><div class="manu-image"><%= link_to image_tag("other.png") %></div>その他表示</li>
+          </ul>
+        </nav>
     </header>
   <% end %>
   <body>

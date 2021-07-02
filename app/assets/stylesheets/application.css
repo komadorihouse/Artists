@@ -20,20 +20,31 @@ a {
   margin-top: 10px;
 }
 
-.show-lists{
-  width: 380px - 62px;
+
+nav{
+  background-color: #f4f4f4;
   position: absolute;
+  z-index: 1;
+  top: 100px;
+  left: 0;
+  overflow-x: hidden;
+  text-align: center;
+  width: 0;
+  font-size: 17px;
+  transition: 0.2s;
+  /* width: 0;
+  position: absolute;
+  z-index: 1;
+  overflow-x: hidden;
   left: 0px;
   top: 100px;
-  background-color: #f4f4f4;
-  font-size: 22px;
   padding: 31px;
   color: #606060;
+  transition: .5s; */
 }
 
-.hidden {
-  display: none;
-  cursor:pointer;
+nav.open-menu {
+  width: 35%;
 }
 
 .manu-image {
@@ -45,11 +56,13 @@ a {
 
 .border {
   border-bottom: 1px solid #7a7a7a;
-  margin: 15px 0px 15px 0px;
+  margin: 15px 0px 15px 50px;
+  width: 70%;
 }
 
 .pull-down-list{
   padding: 17px 35px 17px 15px;
+  margin-left: 31px;
   display: flex;
   color: #606060;
 }
@@ -61,7 +74,7 @@ a {
 }
 
 .rogin-menu {
-  font-size: 24px;
+  font-size: 19px;
   margin-top: 6px;
   margin-left: calc(100vw - 174px - 105px - 130px - 28px - 15px);
   font-family: 'Noto Sans JP', sans-serif;
